@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="heading">Feedback Survey Form</h2>
+		<div class="main">
+			<form action="submit.html" onsubmit="return validateForm()" method="get" >
+				<div class="row">
+					<div class="label-col-25">
+						<label for="name">Name</label>
+					</div>
+					<div class="label-col-75">
+						<input type="text" placeholder="Enter your full name" id="name" name="Name" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label-col-25">
+						<label for="gender">Gender</label>
+					</div>
+					<div class="label-col-75">
+						<input type="radio" id="male" name="gender" />
+						<label for="male">Male</label>
+						<input type="radio" id="female" name="gender" />
+						<label for="female">Female</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-col-25">
+						<label for="skills">Chosen Domains</label>
+					</div>
+					<div class="label-col-75">
+						<input type="checkbox" id="skills" name="java" />
+						<label for="c">Java</label>
+						<input type="checkbox" id="skills" name="c" />
+						<label for="c">C</label>
+						<input type="checkbox" id="skills" name="c++" />
+						<label for="c++">C++</label>
+						<input type="checkbox" id="skills" name="python" />
+						<label for="python">Python</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-col-25">
+						<label for="department">Department</label>
+					</div>
+					<div class="label-col-75">
+						<select name="field" id="department">
+							<option value="computer">Computer Engineering</option>
+							<option value="entc">Electric Engineering</option>
+							<option value="mechanical">Mechanical Engieering</option>
+							<option value="civil">Civil Engineering</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label-col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="label-col-75">
+						<input type="email" id="email" name="email" placeholder="Enter your email" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-col-25">
+						<label for="mobile">Mobile No</label>
+					</div>
+					<div class="label-col-75">
+						<input type="text" id="mobile" name="mobile" placeholder="Enter your mobile no." />
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-col-25">
+						<label for="feedback">Feedback</label>
+					</div>
+					<div class="label-col-75">
+						<textarea id="feedback" name="feedback" placeholder="Give Your Feedback..." rows="5" cols="78" required></textarea>
+					</div>
+				</div>
+				<br />
+				<hr />
+				<br />
+				<div class="btns">
+					<input type="submit" value="Submit">
+					<button class="btn">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./R.jpeg');
+}
+.container{
+    width: 65vw;
+    margin: auto;
+}
+
+.main {
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color:cadetblue;
+    padding: 20px;
+}
+
+.heading{
+    display: flex;
+    background-color:darkcyan;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.label-col-25 {
+    float: left;
+    width: 18%;
+    margin-top: 6px;
+}
+
+.label-col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* float: right; */
+}
+
+input[type=submit]:hover {
+    background-color: olivedrab;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: orangered;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
